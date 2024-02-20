@@ -11,16 +11,16 @@ function Next5Days() {
   }
   return (
     <div>
-      <div className="p-8 lg:my-10 border-solid border-2 border-black bg-black rounded-3xl w-full">
+      <div className="p-8 lg:my-10 border-solid border-2 border-black bg-black rounded-3xl w-full h-[35rem]">
         <h1 className="m-2 text-3xl">Next 7 days</h1>
       {weatherdata.days.slice(1,8).map((days,index)=>{
        return( 
-       <div key={index++} className="grid text-2xl grid-cols-3">
-       <div className="flex ">
+       <div key={index++} className="grid text-2xl mt-2 grid-cols-3">
+       <div className="flex">
         <h1>{days.feelslike}<sup>o</sup>C</h1>
        </div>
-       <h3>{new Date(days.datetime).getUTCDate() + " " + month[new Date().getUTCMonth()]}</h3>
-       <h3>{weekday[new Date(days.datetime).getUTCDay()]}</h3>
+       <h3>{new Date(days.datetime).getUTCDate() + " " + month[new Date().getUTCMonth()]} </h3>
+       <h3 className="pl-5"> {weekday[new Date(days.datetime).getUTCDay()]}</h3>
      </div>)
       })}
       </div>

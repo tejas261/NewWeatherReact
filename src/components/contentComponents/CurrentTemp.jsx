@@ -37,7 +37,7 @@ function CurrentTemp() {
   }
   return (
     <div>
-      <div className="h-[35rem] p-6 w-full bg-black rounded-3xl">
+      <div className="h-[35rem] p-8 w-full bg-black rounded-3xl">
         <h1 className="text-center font-bold text-3xl">
           {weatherdata.resolvedAddress}
         </h1>

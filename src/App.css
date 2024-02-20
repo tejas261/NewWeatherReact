@@ -19,3 +19,12 @@ body{
   border-radius: 20px;
   border: 2px solid white;
 }
+
+@media screen and (max-width: 640px) {
+  .main {
+    flex-direction: column
+  }
+  .left{
+    flex-direction: row-reverse;
+  }
+}

@@ -12,7 +12,6 @@ const WeatherProvider=({children})=>{
   const fetchWeather=async()=>{
     const res = await axios.get(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}%20?unitGroup=metric&key=7BFYC74T8SYXWNDJ2D9BR42BS&contentType=json`)
     const data = res.data 
-    console.log(data);
     setweatherdata(data)
     setWeatherCondition(data.currentConditions.conditions)
   }

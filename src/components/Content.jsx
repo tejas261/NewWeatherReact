@@ -6,8 +6,8 @@ import Hourly from "./contentComponents/Hourly";
 
 function Content() {
   return (
-    <div className="main flex sm:max-lg:flex-col w-full">
-      <div className="left flex flex-col sm:max-lg:flex-row sm:max-lg:w-full sm:max-lg:justify-evenly w-[50rem] h-[35rem] m-[2rem] sm:max-lg:min-w-[752px]">
+    <div className="main flex xs:max-lg:flex-col w-full">
+      <div className="left my-5 flex flex-col xs:max-lg:flex-row xs:max-lg:w-full xs:max-lg:justify-evenly w-[50rem] h-[34rem] m-[2rem] xs:max-lg:min-w-[752px] ">
         <CurrentTemp />
         <Next5Days />
       </div>
