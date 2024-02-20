@@ -1,0 +1,21 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  background: rgb(9,9,9);
+  color: #fff; 
+}
+
+.grid{
+  padding: 10px;
+}
+
+.divs{
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+  background: #000;
+  border-radius: 20px;
+  border: 2px solid white;
+}
