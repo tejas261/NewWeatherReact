@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
+import Skeleton from "react-loading-skeleton";
 import { WeatherContext } from "../../context/WeatherContext";
 
 function Next5Days() {
@@ -7,7 +8,7 @@ function Next5Days() {
   const { weatherdata } = useContext(WeatherContext);
 
   if (!weatherdata || !weatherdata.currentConditions || !weatherdata.days || weatherdata.days.length === 0) {
-    return <div>Loading....</div>;
+    return <Skeleton count={8} className="m-8"/>
   }
   return (
     <div>

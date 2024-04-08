@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
+import Skeleton from "react-loading-skeleton";
 import { WeatherContext } from "../../context/WeatherContext";
 
 function Hourly() {
@@ -9,7 +10,7 @@ function Hourly() {
     !weatherdata.days ||
     weatherdata.days.length === 0
   ) {
-    return <div>Loading....</div>;
+    return <Skeleton count={5} className="m-4"/>
   }
   return (
     <div className="text-3xl bg-[#191919] m-10 rounded-3xl p-4">

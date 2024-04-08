@@ -1,11 +1,12 @@
-import React, { useContext, } from "react";
+import { useContext, } from "react";
+import Skeleton from "react-loading-skeleton";
 import { WeatherContext } from "../../context/WeatherContext";
 
 function Highlights() {
   const {data,weatherdata} = useContext(WeatherContext)
 
   if (!data || !data.days || data.days.length === 0) {
-    return <div>Loading....</div>;
+    return <Skeleton count={7} className="m-7"/>
   }
   return (
     <div className="flex flex-col m-10 h-[40rem] rounded-3xl text-3xl bg-[#191919]">
